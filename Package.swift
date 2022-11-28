@@ -8,14 +8,17 @@ let package = Package(
     products: [
         .library(
             name: "AnalyticsWrapper",
-            targets: ["AnalyticsWrapper"]),
+            targets: ["AnalyticsWrapper"]
+        ),
     ],
     targets: [
         .target(
             name: "AnalyticsWrapper",
-            dependencies: []),
+            dependencies: []
+        ),
         .testTarget(
             name: "AnalyticsWrapperTests",
-            dependencies: ["AnalyticsWrapper"]),
+            dependencies: ["AnalyticsWrapper"]
+        ),
     ]
 )
