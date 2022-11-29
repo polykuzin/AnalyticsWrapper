@@ -42,8 +42,5 @@ public protocol _AnalyticsEngine {
     ///   - profileInfo: Key from **_ProfileInfo** enum - you can can extend it, if you want. This approach was chosen due to the fact that many fanatic systems provide special methods for some preset values.
     ///   - with: Value of -YOUR-WANTED-TYPE- to send to analytics service
     @objc
-    optional func reportProfile(profileInfo: _ProfileInfo, with: Any)
-    
-    // TODO: Make it optional
-//    func reportECommerce(event: _ECommerceEvent)
+    optional func reportProfile(profileInfo: _AnalyticsProfileInfo, with: Any)
 }

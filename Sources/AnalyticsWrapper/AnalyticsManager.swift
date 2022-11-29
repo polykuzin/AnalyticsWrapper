@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 public class AnalyticsManager : _AnalyticsManager {
     
     required public init(engines: [_AnalyticsEngine]) {
@@ -32,13 +31,7 @@ public class AnalyticsManager : _AnalyticsManager {
         }
     }
     
-//    public func report(_ ecommerce: _ECommerceEvent) {
-//        engines.forEach {
-//            $0.reportECommerce(event: ecommerce)
-//        }
-//    }
-    
-    public func report(_ profileInfo: (key: _ProfileInfo, value: Any)) {
+    public func report(_ profileInfo: (key: _AnalyticsProfileInfo, value: Any)) {
         engines.forEach {
             $0.reportProfile!(profileInfo: profileInfo.key, with: profileInfo.value)
         }

@@ -15,7 +15,5 @@ public protocol _AnalyticsManager {
     
     func report(_ revenue: _AnalyticsRevenueEvent)
     
-//    func report(_ ecommerce: _ECommerceEvent)
-    
-    func report(_ profileInfo: (key: _ProfileInfo, value: Any))
+    func report(_ profileInfo: (key: _AnalyticsProfileInfo, value: Any))
 }
